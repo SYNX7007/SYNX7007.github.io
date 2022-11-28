@@ -1,0 +1,22 @@
+footer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: brown;
+	color: white;
+	text-align: center;
+}
+h1{
+	font-size: 50px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-bottom: 30px;
+}
+p{
+	font-size: 20px;
+	font-family: monospace;
+}
+ul{
+	font-size: 20px;
+}
