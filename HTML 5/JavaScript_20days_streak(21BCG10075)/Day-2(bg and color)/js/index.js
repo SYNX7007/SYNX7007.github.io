@@ -11,6 +11,6 @@ function changeTheBackground() {
 };
 
 // Selecting a default color
-body.style.backgroundColor = "purple";
+body.style.backgroundColor = "orange";
 // Adding event listener
 button.addEventListener("click", changeTheBackground);
