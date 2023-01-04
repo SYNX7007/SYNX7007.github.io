@@ -1,0 +1,22 @@
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #33ccff, #ff99cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #33ccff, #ff99cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.container {
+    text-align: center;
+}
+
+.heading, .counter-machine{
+    color: #b80075;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #5F9EA0;
+    color: white;
+    text-align: center;
+}
