@@ -47,8 +47,6 @@ function draw() {
   
 }
 
-
-
 function mouseClicked() {
   player.shoot();
 }

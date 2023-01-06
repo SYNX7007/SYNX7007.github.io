@@ -32,6 +32,16 @@ class Enemy {
     image(EnemyImg, 0, 0, 50, 50);
     //rect(0, 0, 20, 20);
     pop();
+
+    /* enemybullet
+    for (let Enemybullet of this.Enemybullets) {
+      Enemybullet.draw();
+      Enemybullet.update();
+    }
+    
+    if (this.Enemybullets.length > 20) {
+      this.Enemybullets.splice(0, 1);
+    }*/
   }
   
   update() {
@@ -39,5 +49,59 @@ class Enemy {
     difference.limit(this.speed);
     this.pos.add(difference);
   }
+
+  /* this is for enemy bullet*/
   
+  /*function Enemybullet(destinationX, destinationY, enemySprite) {
+
+    this.id = 'bullet';
+    this.x = enemySprite.getX()+(enemySprite.getWidth()/2);
+    this.y = enemySprite.getY()+(enemySprite.getHeight()/2);
+
+    var targetX = destinationX - this.x,
+        targetY = destinationY - this.y,
+        distance = Math.sqrt(targetX * targetX + targetY * targetY);
+
+    this.velX = (targetX / distance) * 5;
+    this.velY = (targetY / distance) * 5;
+
+    this.finished = false;
+
+    this.sprite = new Kinetic.Circle({
+        x: this.x,
+        y: this.y, 
+        radius: 3,
+        fill: 'black',
+        name: 'enemyProjectile'
+    });
+
+    this.draw = function(index) {
+
+        var mayDelete = false;
+
+        this.x += this.velX;
+        this.y += this.velY;
+
+        this.sprite.setAbsolutePosition(this.x, this.y);*/
+        //console.log(this.sprite.getX());
+
+/*
+        if(enemyCollision(this) == true) {
+            mayDelete = true;
+        }*/
+
+       /* if (bulletLeftField(this.sprite) == true) {
+            mayDelete = true;
+        }
+
+        if (mayDelete == true) {
+            this.sprite.remove();
+            enemies[index].bullets.splice(0, 1);
+            createEnemyBullet(enemies[index]);
+        }
+
+
+
+        ammoLayer.draw();
+    }*/
 }

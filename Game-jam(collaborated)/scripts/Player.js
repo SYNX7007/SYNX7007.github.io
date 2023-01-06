@@ -11,7 +11,7 @@ class Player {
     translate(this.pos.x, this.pos.y);
     this.angle = atan2(mouseY - this.pos.y, mouseX - this.pos.x);
     rotate(this.angle);
-    image(playerImg, 0, 0, 50, 50);
+    image(playerImg, -15, 0, 50, 50);
     pop();
     
     
@@ -24,7 +24,7 @@ class Player {
       this.bullets.splice(0, 1);
     }
   }
-  
+
   update() {
     
     let sidewaysSpeed = 0;
