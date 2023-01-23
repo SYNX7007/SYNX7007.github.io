@@ -1,19 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>The Garbage Jumper</title>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+	<script type="text/javascript" src="js/boot.js"></script>
+	<script type="text/javascript" src="js/preload.js"></script>
+	<script type="text/javascript" src="js/gamestart.js"></script> <!--adding starting script-->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/gameover.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+			overflow: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+		(function() {
 
-  </head>
-  <body>
-    <script src="p5.gif.min.js"></script>
-    <script src='scripts/sketch.js'></script>
-    <script src='scripts/Bullet.js'></script>
-    <script src='scripts/Player.js'></script>
-    <script src='scripts/Enemy.js'></script>
-  </body>
+				//Create a new game that fills the screen
+				game = new Phaser.Game(850, 425, Phaser.AUTO);
+				
+				//Add all states
+				game.state.add("Boot", Boot);
+				game.state.add("Preload", Preload);
+				game.state.add("GameStart", GameStart);//adding starting state
+				game.state.add("Main", Main);
+				game.state.add("GameOver", GameOver);
+
+				//Start the first state
+				game.state.start("Boot");
+				
+		})();
+    </script>
+</head>
+<body>
+</body>
 </html>
