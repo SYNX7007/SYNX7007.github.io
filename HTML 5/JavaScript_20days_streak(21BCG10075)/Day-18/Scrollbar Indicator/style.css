@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #1fa2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#ff6600,#ffcc99,#ff99ff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#ff6600,#ffcc99,#ff99ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Staatliches', cursive;
+}
+.text {
+  color: #fff;
+  line-height: 10rem;
+  text-align: center;
+}
+
+/* making the span more stylish */
+span {
+  padding: 1rem;
+  border-radius: 50%;
+  background: #780206; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#ff6699,#ccffcc); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#ff6699,#ccffcc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.indicator {
+  background: #1e9600; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#0066cc,#99ff33,#99ffcc); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#0066cc,#99ff33,#99ffcc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 8px;
+  border-radius: 4px;
+  width: 0%;
+  position: fixed;
+  top: 0px;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
