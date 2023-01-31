@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Aboreto', cursive;
+}
+body {
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  background-color: #333;
+  color: #fff;
+  height: 12vh;
+  width: 20vw;
+  font-size: 2.5vw;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+.Red:hover {
+  background-color: red;
+  color: #fff;
+}
+.Green:hover {
+    background-color: green;
+    color: #fff;
+  }
+  .Yellow:hover {
+    background-color: yellow;
+    color: #333;
+  }
+  .all:hover {
+    background-color: orange;
+    color: #fff;
+  }
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.tag {
+  height: 19vh;
+  width: 19vw;
+  border-radius: 25px;
+  margin: 5px;
+  text-align: center;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
